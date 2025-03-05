@@ -1,0 +1,482 @@
+/* FONT CSS */
+.tangerine-regular {
+    font-family: "Tangerine", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.tangerine-bold {
+    font-family: "Tangerine", serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+.yesteryear-regular {
+    font-family: "Yesteryear", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* <weight>: Use a value from 100 to 1000? */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-flex{
+  font-family: "Roboto Flex", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+
+
+
+/* GENERAL CSS */
+body{
+    margin: 0px 1rem;
+}
+
+.section-spacer{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 1rem;
+}
+
+.note{
+    margin-top: -px;
+
+}
+
+.hidden{
+    display: none;
+    opacity: 0;
+}
+
+.venue.show, .attire.show, .guest-list.show{
+    /* display: block; */
+    opacity: 1;
+    height: auto;
+    -webkit-transition: opacity .5s ease-in-out, height 0.5s ease;
+    -moz-transition: opacity .5s ease-in-out, height 0.5s ease;
+    -o-transition: opacity .5s ease-in-out, height 0.5s ease;
+    transition: opacity  .5s ease-in-out, height 0.5s ease;
+}
+
+.venue, .attire, .guest-list{
+    /* display:none; */
+    opacity:0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+
+
+/* HEADER CSS */
+.header{
+    margin: 0px;
+    height: 25rem;
+    background-image: url("blue-rose-pictures-xrqeylt0uf6eq6sy.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-title{
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .7);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-header, .subheader, .line-break{
+    display: block;
+}
+
+.name{
+    font-size: 5rem;
+    color: #0b1328;
+    text-align: center;
+    margin: 0px;
+}
+
+#title-break{
+    height: 2.4rem;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.date{
+    font-size: 3rem;
+    color: #0b1328;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+
+/* NAVIGATION */
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+
+.navigator{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.navigator nav{
+    margin: 0px 10px;
+    font-size: 2rem;
+    background-color: antiquewhite;
+    padding: 5px 8px;
+    box-shadow: 0 8px 8px -4px lightblue;
+}
+
+.navigator nav:hover{
+    scale: 1.2;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all  .5s ease-in-out;
+    cursor:pointer;
+}
+
+.navigator nav.active{
+    scale: 1.2;
+}
+
+
+
+
+
+
+/* VENUE CSS */
+.venue{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-spacer{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.venue-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#venue-break{
+    height: 2.4rem;
+    width: auto;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.venue-ceremony{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.venue-reception{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 40%;
+    height: 25rem;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(137,174,183);
+    background: linear-gradient(166deg, rgba(137,174,183,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(137,174,183,1) 100%);
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+
+}
+
+.title-venue{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+.venue-name{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+.venue-address{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+.venue-ceremony .spacer{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.venue-reception .spacer{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.venue-ceremony .img-container{
+    width: 40%;
+    height: auto;
+    box-shadow: 3rem -2rem  #66021c;
+    overflow: hidden;
+}
+
+.venue-reception .img-container{
+    width: 40%;
+    height: auto;
+    box-shadow: -3rem -2rem #0b1328;
+    overflow: hidden;
+}
+
+.venue-img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/* ATTIRE CSS  */
+.attire{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.attire-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#attire-break{
+    height: 2.4rem;
+    width: auto;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.title-attire{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+
+.attire-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.color-switch{
+    grid-row: span 5 / span 5;
+    padding: 1rem;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attire-men{
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+}
+
+.attire-women{
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+}
+
+.attire-men, .attire-women{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-slide{
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+        
+.slide {
+    min-width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    -webkit-transition: background-color .5s ease-in;
+    -moz-transition: background-color .5s ease-in;
+    -o-transition: background-color .5s ease-in;
+    transition: background-color .5s ease-in;
+}
+
+.indicators {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    height: 400px;
+}
+
+.indicator {
+    width: 60px;
+    height: 60px;
+    margin: 5px 0px;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#indicator1 { background-color: #6c0021; }
+#indicator2 { background-color: #560116; }
+#indicator3 { background-color: #8badb7; }
+#indicator4 { background-color: #0b1328; }
+#indicator5 { background-color: #040a18; }
+
+.indicator.active {
+    transition: all .5s ease-in-out;
+    border-color: #333;
+    border-style: solid;
+    width: 100px;
+    height: 80px;
+    margin: 10px 0px;
+    padding: 2%;
+    
+}
+
+.exImg-container{
+    width: 90%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.example{
+    width: 50%;
+    height: auto;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all  .5s ease-in;
+}
+
+
+
+
+.guest-list{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.guest-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#guest-break{
+    height: 2.4rem;
+    width: auto;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.title-guest{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+
+
+
+.footer{
+    height: 5rem;
+    margin-top: 1rem;
+}

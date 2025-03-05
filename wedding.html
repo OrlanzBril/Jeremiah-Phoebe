@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Tangerine:wght@400;700&family=Yesteryear&display=swap&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <link href="wedding.css" rel="stylesheet">
+        <title>Jeremiah & Phoebe Wedding</title>
+    </head>
+    <body>
+        <section class="header">
+            <div class="header-title">
+                <div class="title-header">
+                    <h1 class="cookie-regular name">Jeremiah & Phoebe</h1>
+                </div>
+                <div class="line-break">
+                    <img id="title-break" src="text-line-hand-drawn-vintage-black-lines-for-wedding-break-vector.png">
+                </div>
+                <div class="subheader">
+                    <h3 class="cookie-regular date">March 21, 2025</h3>
+                </div>
+            </div> 
+        </section>
+        
+        <section class="navigation">
+            <div class="navigator">
+                <nav class="cookie-regular nav active" onclick="showSection('venue')" data-target="venue">Venue</nav>
+                <nav class="cookie-regular nav" onclick="showSection('attire')" data-target="attire">Attire</nav>
+                <nav class="cookie-regular nav" onclick="showSection('guest')" data-target="guest">Guest List</nav>
+            </div>
+        </section>
+
+        <div class="section-spacer"></div>
+        <section class="venue section" id="venue">
+            <div class="venue-title">
+                <h1 class="cookie-regular title-venue">Venues</h1>
+                <div class="line-break">
+                    <img id="venue-break" src="location.png">
+                </div>
+                <h4 class="roboto-flex note">Please note that only the couple's family, entourage and sponsors are required to attend the ceremony</h4>
+                <h4 class="roboto-flex note" style="margin-top: -10px;">We would understand if you would choose to only attend the program at the reception as the church is not in the same area as the reception venue</h4>
+            </div>
+
+            <div class="venue-ceremony">
+                <div class="card-title">
+                    <h1 class="cookie-regular title-venue">Ceremony Venue</h1>
+                    <br>
+                    <h1 class="roboto-flex venue-name">Our Lady of Lourdes Parish Church</h1>
+                    <h4 class="roboto-flex venue-address">Silang Junction North, Tagaytay, Cavite</h4>
+                </div>
+                <div class="spacer"></div>
+                <div class="img-container">
+                    <img class="venue-img" src="2021-02-15.jpg" alt="church">
+                </div>
+            </div>
+
+            <div class="body-spacer"></div>
+
+            <div class="venue-reception">                
+                <div class="img-container">
+                    <img class="venue-img" src="2021-02-15.jpg" alt="church">
+                </div>
+                <div class="spacer"></div>
+                <div class="card-title">
+                    <h1 class="cookie-regular title-venue">Reception Venue</h1>
+                    <br>
+                    <h1 class="roboto-flex venue-name">The Nature Bliss Resort</h1>
+                    <h4 class="roboto-flex venue-address">#239 Lourdes st. Maitim II Central Tagaytay, 4102 Cavite</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="attire section" id="attire">
+            <div class="attire-title">
+                <h1 class="cookie-regular title-attire">Attire</h1>
+                <div class="line-break">
+                    <img id="attire-break" src="attire.png">
+                </div>
+                <h4 class="roboto-flex note">We kindly request our guests to wear semi-formal attire with Maroon, Navy Blue, Dusty Blue or any of these colors on our special day</h4>
+            </div>
+            
+            <div class="attire-grid">
+                <div class="color-switch">
+                    <div class="indicators">
+                        <span class="indicator" id="indicator1" data-color="1"></span>
+                        <span class="indicator" id="indicator2" data-color="2"></span>
+                        <span class="indicator" id="indicator3" data-color="3"></span>
+                        <span class="indicator" id="indicator4" data-color="4"></span>
+                        <span class="indicator" id="indicator5" data-color="5"></span>
+                    </div>
+                </div>
+                <div class="attire-men">
+                    <div class="exImg-container">
+                        <img id="attireMen" class="example">
+                    </div>
+                </div>
+                <div class="attire-women">
+                    <div class="exImg-container">
+                        <img id="attireWomen" class="example">
+                    </div>          
+                </div>
+                <div class="color-slide">
+                    <div class="slide" id="color-box"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guest-list section" id="guest">
+            <div class="guest-title">
+                <h1 class="cookie-regular title-guest">Guests</h1>
+                <div class="line-break">
+                    <img id="attire-break" src="text-line-hand-drawn-vintage-black-lines-for-wedding-break-vector.png">
+                </div>
+                <h4 class="roboto-flex note">As we embark on this incredible journey together, your love and support mean the world to us</h4>
+                <h4 class="roboto-flex note" style="margin-top: -10px;">If you'd like to contribute to our dreams, a monetary gift would be cherished as we build our life together</h4>
+                <h4 class="roboto-flex note" style="margin-top: -10px;">Grazing table and photobooth are available at 5 pm at the lobby area while you wait for the program to start</h4>
+            </div>
+        </section>
+
+        <section class="footer">
+        </section>
+        <script src="wedding.js"></script>
+    </body>
+</html>

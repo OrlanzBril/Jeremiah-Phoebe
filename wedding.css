@@ -153,15 +153,16 @@ body{
 }
 
 .navigator nav{
-    margin: 0px 10px;
+    margin: 0px 15px;
     font-size: 2rem;
     background-color: antiquewhite;
-    padding: 5px 8px;
+    padding: 5px 20px;
     box-shadow: 0 8px 8px -4px lightblue;
 }
 
 .navigator nav:hover{
-    scale: 1.2;
+    /* scale: 1.2; */
+    /* text-decoration: underline 1px; */
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
@@ -170,7 +171,13 @@ body{
 }
 
 .navigator nav.active{
-    scale: 1.2;
+    scale: 1.3;
+    text-decoration: underline 1px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all  .5s ease-in-out;
+    cursor:pointer;
 }
 
 
@@ -471,10 +478,84 @@ body{
     margin: 0px;
 }
 
+.guest-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
+.guest-lists, .seating-plan{
+    padding: 5px;
+}
 
+.guest-lists{
+    width: 40%
+}
 
+.seating-plan{
+    width: 60%
+}
 
+.guest-lists{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#seating-img{
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 20px;
+    width: 80% !important;
+  }
+  
+.nav-arrow {
+    background-color: #8badb7 !important;
+    border: none ;
+    cursor: pointer !important;
+    font-size: 1.5rem !important;
+    text-align: center;
+}
+
+th{
+    text-align: center !important;
+    font-size: 3rem;
+}
+
+td{
+    height: 1rem;
+    font-size: 1.5rem;
+}
+  
+button:focus {
+    outline: none;
+}
+
+button:hover{
+    background-color: #6c0021 !important;
+    color: white !important;
+}
+
+.table-nav{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#arrow-spacer{
+    height: 3rem;
+    width: auto;
+    margin: 0px 15px;
+}
 
 .footer{
     height: 5rem;

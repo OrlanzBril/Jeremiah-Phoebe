@@ -6,6 +6,64 @@ const dataColor = ["#6c0021", "#560116", "#8badb7", "#0b1328","#040a18"];
 const example = ["1.png","2.png","3.png","4.png","5.png"];
 let menLoc = "AttireMen/";
 let womenLoc = "AttireWomen/";
+const prevArrow = document.getElementById("prevArrow");
+const nextArrow = document.getElementById("nextArrow");
+const table = document.getElementById("dataTable");
+const headers = table.querySelectorAll("th");
+const rows = table.querySelectorAll("tr");
+
+let currentColumn = 0; // Initially show the first column
+const totalColumns = headers.length;
+// console.log(headers);
+
+function updateTable() {
+  // Loop through each column and hide/show accordingly
+  headers.forEach((header, index) => {
+    if (index === currentColumn) {
+      header.style.display = "";
+      header.classList.add('typing');
+        
+      setTimeout(() => {
+        header.classList.remove('typing');
+      }, 2000);
+    } else {
+      header.style.display = "none";
+    }
+  });
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+    console.log(cells);
+    cells.forEach((cell, index) => {
+      if (index === currentColumn) {
+        cell.style.display = "";
+        cell.classList.add('typing');
+        
+        setTimeout(() => {
+          cell.classList.remove('typing');
+        }, 2000);
+      } else {
+        cell.style.display = "none";
+      }
+    });
+  });
+}
+
+prevArrow.addEventListener("click", function() {
+  if (currentColumn > 0) {
+    currentColumn--;
+    updateTable();
+  }
+});
+
+nextArrow.addEventListener("click", function() {
+  if (currentColumn < totalColumns - 1) {
+    currentColumn++;
+    updateTable();
+  }
+});
+
+// Initial update
 
 // Function to set the active color
 // Add event listener to each color swatch
@@ -69,6 +127,7 @@ function showSection(sectionId) {
 document.addEventListener('DOMContentLoaded', function() {
     setActiveColor(indicators[0]); // Make the first swatch active by default
     showSection('venue');
+    updateTable();
 });
 
 indicators.forEach(swatch => {

@@ -69,7 +69,7 @@ body{
     opacity: 0;
 }
 
-.venue.show, .attire.show, .guest-list.show{
+.venue.show, .attire.show, .guest-list.show, .gift.show{
     /* display: block; */
     opacity: 1;
     height: auto;
@@ -79,7 +79,7 @@ body{
     transition: opacity  .5s ease-in-out, height 0.5s ease;
 }
 
-.venue, .attire, .guest-list{
+.venue, .attire, .guest-list, .gift{
     /* display:none; */
     opacity:0;
     height: 0;
@@ -447,7 +447,7 @@ body{
 
 
 
-
+/* GUEST LIST CSS */
 .guest-list{
     width: 80%;
     margin-left: auto;
@@ -513,7 +513,7 @@ table {
     border-collapse: collapse;
     margin: 0 20px;
     width: 80% !important;
-  }
+}
   
 .nav-arrow {
     background-color: #8badb7 !important;
@@ -557,7 +557,91 @@ button:hover{
     margin: 0px 15px;
 }
 
+
+
+
+
+/* GIFTS CSS */
+.gift{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-gift{
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    margin: 0px;
+}
+
+.gift-title{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#gift-break{
+    height: 2.4rem;
+    width: auto;
+    align-self: center;
+}
+
+.gift-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+
+.bpi-qr, .gcash-qr{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-label{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#label-break{
+    height: 3rem;
+    width: auto;
+    margin-top:-5px;    
+    margin-bottom: 3rem ;
+}
+
+.bpi-qr .img-container{
+    width: 70%;
+    height: auto;
+    box-shadow: -1rem -1rem 20px 0px #8badb7;
+    overflow: hidden;
+}
+
+.gcash-qr .img-container{
+    width: 70%;
+    height: auto;
+    box-shadow: -1rem -1rem 20px 0px #6c0021;
+    overflow: hidden;
+}
+
+.gift-img{
+    max-width: 100%;
+    height: auto;
+}
+
+
 .footer{
     height: 5rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
